@@ -41,7 +41,7 @@ couleurInitiale=""
 
 def couleurTerrain() :
     global couleurInitiale
-    a=rd.randint(1,3)
+    a=rd.randint(1,100)
     if a==1 :
         couleurInitiale="blue"
     elif a==2 :
@@ -51,9 +51,9 @@ def couleurTerrain() :
 
 def generationTerrains () :
     global couleurInitiale
-    couleurTerrain()
     for i in range(0,LARGEUR,25) :
         for j in range(0,HAUTEUR,25) :
+            couleurTerrain()
             canvas.create_rectangle((i,j), (i+25,j+25), outline = "black", fill=couleurInitiale)
 #########################################
 
