@@ -7,3 +7,13 @@
 # Gregoire DUNGLAS
 # Keli xaviera DZOUOSSIA MOZIE
 #########################################
+
+# Import des librairies
+import random as rd
+import tkinter as tk
+
+# Definition des constantes
+
+# Definition des variables globales
+
+# Programme principal
