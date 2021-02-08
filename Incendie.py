@@ -1,4 +1,5 @@
 #########################################
+# Informations liées au groupe :
 # groupe LDDMP 1
 # Nikita DE LA FOURNIERE
 # Malek WALLIER
@@ -8,12 +9,35 @@
 # Keli xaviera DZOUOSSIA MOZIE
 #########################################
 
+
+
+#########################################
+#Import des librairies
+
+#########################################
+
+
+
+#########################################
+#DEFINITION DES CONSTANTES
+
+#########################################
 # Import des librairies
 import random as rd
 import tkinter as tk
 
-# Definition des constantes
 
-# Definition des variables globales
 
-# Programme principal
+#########################################
+#DEFINITION DES VARIABLES GLOBALES
+
+#########################################
+
+
+#########################################
+#DEFINITION DES FONCTIONS
+
+#########################################
+
+#########################################
+#PROGRAMME PRINCIPAL 
