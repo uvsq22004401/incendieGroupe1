@@ -13,18 +13,19 @@
 
 #########################################
 #Import des librairies
-
+import random as rd
+import tkinter as tk
 #########################################
 
 
 
 #########################################
 #DEFINITION DES CONSTANTES
-
+LARGEUR = 800
+HAUTEUR = 800
+DUREE_FEU = 0
+DUREE_CENDRE = 0
 #########################################
-# Import des librairies
-import random as rd
-import tkinter as tk
 
 
 
@@ -41,3 +42,10 @@ import tkinter as tk
 
 #########################################
 #PROGRAMME PRINCIPAL 
+
+racine = tk.Tk()
+
+canvas = tk.Canvas(racine, bg="white", width = LARGEUR, height = HAUTEUR)
+canvas.grid(column=0,row=0)
+
+racine.mainloop()
