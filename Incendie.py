@@ -33,7 +33,7 @@ DUREE_CENDRE = 5
 #DEFINITION DES VARIABLES GLOBALES
 couleurInitiale=""
 listeCases = []
-
+listeCouleur = []
 
 #########################################
 
@@ -53,13 +53,15 @@ def couleurTerrain() :
 
 def generationTerrains () :
     global couleurInitiale, listeCases  
-    for i in range(0,LARGEUR,15) :
-        for j in range(0,HAUTEUR,15) :
+    for j in range(0,HAUTEUR,15) :
+        for i in range(0,LARGEUR,15) :
             couleurTerrain()
             canvas.create_rectangle((i,j), (i+15,j+15), outline = "black", fill=couleurInitiale)
-            identitéCase= [couleurInitiale,i,j]
+            identitéCase= [couleurInitiale,j//15,i//15]
             listeCases.append(identitéCase)
+            listeCouleur.append(couleurInitiale)
     print(listeCases)
+    print(listeCouleur)
 
 #########################################
 
@@ -70,8 +72,8 @@ racine = tk.Tk()
 
 canvas = tk.Canvas(racine, bg="white", width = LARGEUR, height = HAUTEUR)
 canvas.grid(column=0,row=0)
-for i in range(0,LARGEUR,15) :
-    for j in range(0,HAUTEUR,15) :
+for i in range(0,HAUTEUR,15) :
+    for j in range(0,LARGEUR,15) :
         canvas.create_rectangle((i,j), (i+15,j+15), outline = "black")
 button = tk.Button(racine, text="générer des terrains", command = generationTerrains)
 button.grid(column=0, row=1)
